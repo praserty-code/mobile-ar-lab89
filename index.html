@@ -145,12 +145,14 @@
           arLabel.setAttribute('value', 'MOTOR M1\nSTATUS: NORMAL');
           statusButton.textContent = 'จำลองคำเตือน';
         }
+      });
+
       speedButton.addEventListener('click', () => {
-		speedIndex = (speedIndex + 1) % speedLevels.length;
-		applySpeed();
-		});
-		applySpeed();
-	  });
+        speedIndex = (speedIndex + 1) % speedLevels.length;
+        applySpeed();
+      });
+
+      applySpeed();
     });
   </script>
 </head>
